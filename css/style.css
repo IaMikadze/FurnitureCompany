@@ -34,19 +34,17 @@
 /* main section 1 image*/
 .picture {
   width: 100%;
-  height: 100%;
-  margin: auto;
-  padding: auto;
+  object-fit: cover;
+  background-image: url(/images/firstwidepic.png);
 }
 /* products */
 .Titles {
   font-family: Poppins;
   font-size: 40px;
   font-weight: 700;
-  line-height: 48px;
   text-align: center;
-  margin-top: 49px;
   margin-bottom: 50px;
+  margin-top: 49px;
   color: rgba(58, 58, 58, 1);
 }
 .secondary-titles {
@@ -59,25 +57,33 @@
 }
 /* Product list */
 .Products {
-  margin: auto;
-  padding: auto;
-}
-#product-element4 {
-  margin: none;
+  width: 1240px;
+  height: 446px;
+  font-size: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 .product-elements {
   display: inline-block;
-  margin: auto;
-  padding: auto;
-  padding-left: 32px;
+  width: 285px;
+  height: 446px;
+  padding-right: 32px;
 }
+.nopadding {
+  display: inline-block;
+  width: 285px;
+  height: 446px;
+  font-size: 0;
+  padding-right: none;
+}
+
 .text-container {
-  background-color: rgba(244, 245, 247, 1);
   width: 285px;
   height: 145px;
   top: 301px;
   gap: 0px;
   opacity: 0px;
+  background-color: rgba(244, 245, 247, 1);
 }
 .main-dscrptn {
   font-family: Poppins;
@@ -98,11 +104,20 @@
   color: rgba(137, 137, 137, 1);
   padding-left: 16px;
 }
+/* browse the range */
+.browse {
+  margin-bottom: 62.29px;
+}
 /* rooms */
+.rooms {
+  height: 630px;
+  width: 1203px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .room-elements {
   display: inline-block;
-  margin: auto;
-  margin-bottom: 133px;
+  padding-right: 20px;
 }
 .room-titles {
   font-family: Poppins;
@@ -113,6 +128,9 @@
   color: rgba(51, 51, 51, 1);
 }
 /* Description */
+.third-section-title {
+  margin-bottom: 37px;
+}
 
 .dscrptn-dscrptn {
   color: rgba(0, 0, 0, 1);
@@ -130,7 +148,8 @@
   font-weight: 400;
   line-height: 36px;
   text-align: left;
-  margin-left: 197px;
+  padding-left: 56px;
+  margin-top: 133px;
 }
 .text {
   color: rgba(159, 159, 159, 1);
@@ -143,8 +162,6 @@
   height: 48px;
   top: 1991px;
   left: 194px;
-  gap: 0px;
-  opacity: 0px;
   margin-left: 197px;
 }
 
@@ -163,25 +180,33 @@
   line-height: 24px;
   text-align: justified;
   margin-left: 197px;
+  margin-bottom: 36px;
+}
+.images {
+  width: 1239px;
+  height: 348px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sofa {
+  padding-left: 29px;
+  display: inline-block;
 }
 /* line */
 .line {
   margin-top: 150px;
   background-color: rgba(250, 243, 234, 1);
-  width: Fixed (1, 440px) px;
-  height: Fixed (270px) px;
-  top: 2699px;
-  padding: 100px 0px 100px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 53px 100px 53px;
   gap: 0px;
   opacity: 0px;
+  margin-bottom: 48px;
 }
 .line-element {
   display: inline-block;
   margin-left: 78.67px;
-  width: Fixed (1, 440px) px;
-  height: Fixed (270px) px;
-  top: 2699px;
-  padding: 100px 0px 100px 0px;
+  padding-left: 20px;
   gap: 0px;
   opacity: 0px;
 }
@@ -201,13 +226,7 @@
   text-align: left;
   color: rgba(137, 137, 137, 1);
 }
-.footer1 {
-  width: 1440px;
-  height: 505px;
-  top: 2969px;
-  gap: 0px;
-  opacity: 0px;
-}
+
 /* footer */
 .funiro {
   color: black;
@@ -215,27 +234,6 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
-  text-align: left;
-}
-.footer1 {
-  display: inline-block;
-  width: auto;
-}
-.footer-elements {
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: left;
-  color: rgba(0, 0, 0, 1);
-}
-
-.sctn-hdln {
-  color: rgba(159, 159, 159, 1);
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
   text-align: left;
 }
 .map {
@@ -250,7 +248,48 @@
   font-weight: 400;
   line-height: 24px;
   text-align: left;
+  text-justify: auto;
   color: rgba(159, 159, 159, 1);
+}
+.footer {
+  width: 1440px;
+  height: 505px;
+  top: 2969px;
+  gap: 0px;
+  opacity: 0px;
+
+  padding-top: 48px;
+  padding-left: 100px;
+  padding-right: 565px;
+  padding-bottom: 145px;
+  font-size: 0;
+}
+
+.footer1 {
+  display: inline-block;
+  width: auto;
+  vertical-align: top;
+
+  padding-right: 136px;
+}
+.footer-elements {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  padding-bottom: 45px;
+}
+
+.sctn-hdln {
+  color: rgba(159, 159, 159, 1);
+  font-family: Poppins;
+  padding-bottom: 55px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
 }
 
 /* Contact Page  */
@@ -261,10 +300,100 @@
   line-height: 54px;
   text-align: left;
   color: rgba(0, 0, 0, 1);
+  text-align: center;
+  margin-top: 98px;
+}
+.headline-description {
+  margin-left: auto;
+  margin-right: auto;
+  width: 644px;
+  height: 48px;
+  gap: 0px;
+  opacity: 0px;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 128px;
+  color: rgba(159, 159, 159, 1);
 }
 
 .container1 {
   display: inline-block;
+  vertical-align: middle;
+}
+.interactive-map {
+  width: 680px;
+  height: 374px;
+  gap: 0px;
+  opacity: 0px;
+  padding-left: 257px;
+}
+
+.info {
+  display: inline-block;
   vertical-align: top;
-  margin: 15px;
+  margin-left: 82px;
+  margin-right: auto;
+}
+
+.satauri {
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: left;
+  margin-top: 15px;
+}
+.meore {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  width: 212px;
+  height: 72px;
+  top: 807px;
+  padding-top: 15px;
+}
+.title-handmade {
+  width: 632px;
+  height: 45px;
+  top: 1262px;
+  left: 88px;
+  margin-left: 88px;
+  margin-right: 720px;
+  margin-top: 137px;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: left;
+}
+.info-handmade {
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22.5px;
+  text-align: justified;
+  width: 817px;
+  height: 115px;
+  top: 1319px;
+  left: 88px;
+  gap: 0px;
+  opacity: 0px;
+  color: rgba(159, 159, 159, 1);
+  margin-top: 12px;
+  margin-left: 88px;
+  margin-bottom: 30px;
+}
+.read-more {
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: justified;
+  margin-left: 88px;
+  text-decoration: underline;
 }
